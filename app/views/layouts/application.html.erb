@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KaistNewBlog</title>
+  <title>Kaist My Own Blog</title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,15 +23,18 @@
   <!-- Toggleable sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-item">
-      <p>자기소개를 입력해주세요.</p>
+      <p>스타트링크 개발자 이강호입니다.</p>
     </div>
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item" href="/">Home</a>
+      <a class="sidebar-nav-item" href="/blog/intro">Intro</a>
+      <a class="sidebar-nav-item" href="/blog/new">Write</a>
+
       <% if user_signed_in? %>
         <a class='sidebar-nav-item' href='/users/sign_out'><%= current_user.email %></a>
       <% else %>
-        <a class='sidebar-nav-item' href='/users/sign_in'>sign in</a>      
+        <a class='sidebar-nav-item' href='/users/sign_in'>Sign In</a>
       <% end %>
     </nav>
 
@@ -45,7 +48,7 @@
     <div class="masthead">
       <div class="container">
         <h3 class="masthead-title">
-          <a href="/" title="Home">home</a>
+          <a href="/" title="Home">Home</a>
           <small></small>
         </h3>
       </div>
