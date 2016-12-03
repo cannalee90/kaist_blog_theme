@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'blog/intro'
   get 'blog/new'
   post 'blog/write'

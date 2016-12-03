@@ -1,6 +1,16 @@
 class BlogController < ApplicationController
+  before_action :authenticate_user!, only: [:edit, :new]
+  before_action :check_admin, only: [:edit, :new]
+  
+  def check_admin
+    if user_signed_in? and current_user.email != 'test@naver.com'
+      redirect_to :back 
+    end
+  end
+  
   def intro
   end
+  
   def new
   end
   
@@ -21,6 +31,7 @@ class BlogController < ApplicationController
   end
   
   def edit
+    authenticate_user!
     @post = Post.find(params[:id])
   end
   
