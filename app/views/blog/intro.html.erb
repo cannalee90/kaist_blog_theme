@@ -1,49 +1,68 @@
-<button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
-
-<button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button>
-<div class="dropup">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropup
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+<div class="page">
+  <h1 class="page-title">자기소개</h1>
+  <h5> 기본정보</h5>
+  <ul>
+    <li>이강호(Kangho lee)</li>
+    <li><a href = 'http://startlink.io/' target = '_blank'>스타트링크(Startlink) 개발자</a> (2015 2월 ~ 현재)</li>
+    <li>연락처: 010-2677-2637</li>
+    <li>GitHub: <a href = 'https://github.com/cannalee90' target = '_blank'>https://github.com/cannalee90</a></li>
+    <li>LinkedIn: <a href = 'https://kr.linkedin.com/in/kang-lee-80296810b' target = '_blank'>https://kr.linkedin.com/in/kang-lee-80296810b</a></li>
   </ul>
-</div>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    ruby
-  </div>
-</div>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      ...
+  <h5>학력</h5>
+  <ul>
+    <li><a href = 'https://rhs.pcssd.org/' target = '_blank'>Joe. T. Robinson High School</a> 졸업</li>
+    <li><a href = 'http://illinois.edu/' target = '_blank'>University of Illinois Urbana-Champaign</a> 중퇴</li>
+    <li ><a href = 'http://www.inha.ac.kr/mbshome/mbs/kr/index.do' target = '_blank'>인하대학교</a> 휴학</li>
+  </ul>
+
+  <h5>기술 스택</h5>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+      Javascript
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+      Ruby on Rails
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+      C++
+    </div>
+  </div>
+  <h1>금주의 로또 번호</h1>
+  <div class="well"><%= (1..45).to_a.sample(6).sort %></div>
+  <div class="alert alert-success" role="alert">이 페이지는 맘대로 만들어 보세요.</div>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            facebook
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          이강호의 페이스북
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            이강호의 깃허브
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          이강호의 깃허브
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- Small modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
-
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
-<h1 id='hello' style ='font-size: 50px;'>pppp</h1>
-<style>
-
-</style>
